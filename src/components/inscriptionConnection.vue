@@ -14,44 +14,248 @@ export default {
 </script>
 
 <template> 
-    <div class="inscriptionConnection"> 
-        <h2>{{ toto }} Veut s'inscrire ou se conencter</h2> 
-         
-          
-            <button class="favorite" type="button">
-            <router-link to="/connection"> connection </router-link> 
-            </button>
-
-            <button class="favorite" type="button">
-                <router-link to="/inscription"> Inscription </router-link>
-            </button>
 
 
-        <ul> 
-          
-            
-        </ul> 
-    </div> 
+
+
+   <div class="row contenaire inscriptionConnection">
+    
+
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 logo" >
+            <img class="logo" src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png">
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+                <button class="btn1">
+                    <router-link to="/connection"> connection </router-link> 
+                </button> 
+            </div>
+
+             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-top:5vh;">
+                <button class="btn2">
+                    <router-link to="/inscription"> Inscription </router-link>
+                </button>
+            </div>
+        </div>
+
+  
+        
+    </div>
+
+
+
+
 </template>
 
 
 
 <style>
-.inscriptionConnection{ 
-   
-    display: flex;
-    align-items: center;
-    text-align:center;
-    padding:0;
-    margin:0;
 
-    background-image:url("https://www.google.com/search?q=image+feu&client=ubuntu&hs=eFj&channel=fs&sxsrf=AOaemvLgzypHgsh9RCaBvJboVEon2xO_Jw:1639061518888&tbm=isch&source=iu&ictx=1&fir=4TmAC48uLvbB6M%252CHKLjqC9yDN7dpM%252C_%253BmFv1TxGNN_5KZM%252CaLOTMbmSrV7uTM%252C_%253BPV_-4-_jUZF8zM%252CSEpdw8297F81aM%252C_%253BMtcjoveF4jYFxM%252CP3JKCvsFvcQyuM%252C_%253BQLsAPwc41-eRWM%252C4BLfSoAKo_IdoM%252C_%253BAOyzOpHMOwwYFM%252CttS9acdWFpPbeM%252C_%253BpRm7Hp1CvFc-EM%252C-KddrTh4jjgSSM%252C_%253Bin5LYqCu2827fM%252CGLaKdm2WLL3S6M%252C_%253B7DICD6b8VHgduM%252Cw7w5oHt_G8mbqM%252C_%253Bo8OB1R7c-ITFTM%252CP3JKCvsFvcQyuM%252C_%253BM1cEnhirupyU_M%252Ce8CtCGLgjK05hM%252C_%253BLUYgx6WtW_Ly3M%252CF5rcmvbGxHn4vM%252C_%253BqB7nPJv19GkhvM%252CTypDXOh3rFdJVM%252C_%253BAI7eZvzQYTtCAM%252CRMHWBYxFL7gwOM%252C_&vet=1&usg=AI4_-kSnOx_Lu1KMWrOvkIF4GfeziAFalg&sa=X&ved=2ahUKEwiLvOP8-9b0AhUF6RoKHQ7NAkoQ9QF6BAghEAE#imgrc=PV_-4-_jUZF8zM");
+
+.inscriptionConnection{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxICJ_CrYMLUkMsOSms_I15Uh8cuPTicJVIg&usqp=CAU");
     background-repeat:no-repeat;
     background-size: cover;
-
-    height:100vh;
-    width:100%;
-  
 }
 
+.btn1{
+
+width: 256px;
+height: 52.6px;
+
+top: 343px;
+
+background: #006281;
+border: 0.800337px solid #006281;
+box-sizing: border-box;
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+border-radius: 5.60236px;
+   
+}
+
+.btn1 router-link{
+    width: 178.85px;
+    height: 18.41px;
+
+    top: 50vh;
+
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14.4061px;
+    line-height: 121%;
+
+
+    text-align: center;
+    color: #FFF7EA;
+    border: 0.2px solid #FFF7EA;
+}
+
+
+.btn2 { 
+  
+    width: 256px;
+    height: 52.6px;
+    top: 60vh;
+ 
+    background: #FFF7EA;
+    border: 1px solid #FFF7EA;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5.60236px;
+}
+
+.btn2 router-link{
+
+    width: 178.85px;
+    height: 18.41px;
+  
+    top: 60vh;
+
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14.4061px;
+    line-height: 121%;
+
+    /* or 17px */
+    text-align: center;
+    color: #016590;
+    border: 0.2px solid #016590;
+}
+
+
 </style>
+
+
+
+<!-- ***
+
+
+
+
+<script> 
+
+
+export default { 
+    props: {
+        toto: {
+            type: String,
+            default: () => 'Toto pas comptant'
+        }
+    }
+    
+} 
+</script>
+
+<template> 
+
+
+
+
+   <div class="row contenaire inscriptionConnection">
+    
+
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+            <button class="btn1">
+                <router-link to="/connection"> connection </router-link> 
+            </button> 
+              <button class="btn2">
+                <router-link to="/inscription"> Inscription </router-link>
+            </button>
+      
+        </div>
+    
+        
+    </div>
+
+
+
+
+</template>
+
+
+
+<style>
+
+
+.inscriptionConnection{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxICJ_CrYMLUkMsOSms_I15Uh8cuPTicJVIg&usqp=CAU");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.btn1{
+    position:absolute;
+    width: 20%;
+    height: 8vh;
+    top: 50vh;
+    left:40%;
+    
+
+    background: #006281;
+    border: 0.800337px solid #006281;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5.60236px;
+}
+
+.btn1 router-link{
+    position:absolute;
+    width: 15%;
+    height: 6vh;
+    left:40%;
+    font-size: 4vh;
+    top: 50vh;
+
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF7EA;
+    border: 0.2px solid #FFF7EA;
+}
+
+
+.btn2 { 
+  
+    width: 256px;
+    height: 52.6px;
+    top: 60vh;
+ 
+    background: #FFF7EA;
+    border: 1px solid #FFF7EA;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5.60236px;
+}
+
+.btn2 router-link{
+
+    width: 178.85px;
+    height: 18.41px;
+  
+    top: 60vh;
+
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14.4061px;
+    line-height: 121%;
+
+    /* or 17px */
+    text-align: center;
+
+    color: #016590;
+
+    border: 0.2px solid #016590;
+}
+
+
+</style>
+
+
+
+
+-->

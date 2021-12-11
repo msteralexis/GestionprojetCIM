@@ -1,0 +1,1 @@
+import{_ as t}from"./index.acb912f7.js";import{o as e,c as s,a as o}from"./vendor.08e902a3.js";const n={props:{toto:{type:String,default:()=>"Toto pas comptant"}}},a=o("h1",null," Page Inscriptions ",-1),r=o("ul",null,null,-1),c=[a,r];function i(p,_,l,d,u,f){return e(),s("div",null,c)}var x=t(n,[["render",i]]);export{x as default};
