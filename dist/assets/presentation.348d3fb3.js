@@ -1,0 +1,1 @@
+import{_ as o}from"./index.b874e496.js";import{o as n,c as a,a as t,t as r}from"./vendor.c743464d.js";const s={props:{toto:{type:String,default:()=>"Toto pas comptant"}}},l=t("ul",null,null,-1);function c(p,_,e,i,u,d){return n(),a("div",null,[t("h1",null,r(e.toto)+" Veut connaitree l'application",1),l])}var v=o(s,[["render",c]]);export{v as default};

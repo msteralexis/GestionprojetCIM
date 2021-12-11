@@ -1,0 +1,1 @@
+import{_ as t}from"./index.b874e496.js";import{o as e,c as n,a as o}from"./vendor.c743464d.js";const s={props:{toto:{type:String,default:()=>"Toto pas comptant"}}},c=o("h1",null," Page Connection ",-1),a=o("ul",null,null,-1),r=[c,a];function _(l,p,d,i,u,f){return e(),n("div",null,r)}var x=t(s,[["render",_]]);export{x as default};
