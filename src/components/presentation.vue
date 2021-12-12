@@ -31,7 +31,8 @@ export default {
         return {
            counter: 1,
            text: " Trouver <br> un atelier de cuisine <br>  <strong> Près de cher vous </strong> " ,
-           boutonText : " Prochain Etape "
+           boutonText : " Prochain Etape ",
+            logo: "../assets/MijotoLogo__hat-orange.png"
         }
     }
 
@@ -55,7 +56,7 @@ export default {
 
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 logo"  style="padding-top:5vh;" >
-                <img class="logo" src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png">
+                <img class="logo" src="../assets/MijotoLogo__hat-orange.png">
             </div>
 
 
@@ -68,9 +69,15 @@ export default {
 
 
              <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="position:absolute;top:60vh;">
-                <p   ></p> 
-                <button class="btn1" v-on:click="suivant()" >
+              
+                <button v-if="this.counter<4" class="btn1" v-on:click="suivant()" >
                     <p v-html="boutonText" style="width:auto; color:white;">  </p> 
+                </button> 
+
+                <button v-if="this.counter>=4" class="btn1"> 
+                
+                    <router-link  class="lien1" to="/inscriptionConnection"> Commencer </router-link> 
+                  
                 </button> 
             </div>
 
@@ -95,7 +102,7 @@ export default {
 <style>
 
 .presentation{
-    background-image:url("../assets/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg");
+    background-image:url("../assets/jason-briscoe-7MAjXGUmaPw-unsplash.jpg");
     background-repeat:no-repeat;
     background-size: cover;
 }
@@ -120,20 +127,6 @@ export default {
 }
 
 
-
-p{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 3vh;
-    line-height: 121%;
-
-    /* or 23px */
-    text-align: center;
-
-    color: #016590;
-
-}
 
 
 

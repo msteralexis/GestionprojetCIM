@@ -37,6 +37,16 @@ const router = createRouter({
       path: '/inscription',
       name: 'inscription',
       component: () => import('../components/inscription.vue')
+    },
+    {
+      path: '/inscriptionRestaurateur',
+      name: 'inscriptionRestaurateur',
+      component: () => import('../components/inscriptionRestaurateur.vue')
+    },
+    {
+      path: '/inscriptionClient',
+      name: 'inscriptionClient',
+      component: () => import('../components/inscriptionClient.vue')
     }
     
 
@@ -44,3 +54,4 @@ const router = createRouter({
 })
 
 export default router
+
