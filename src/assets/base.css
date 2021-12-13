@@ -10,34 +10,93 @@ main, .contenaire{
   margin:0;
   height:100vh;
   width:100%;
+  font-size:2vh;
 }
 
 
 .cadre{
   background: #FFF7EA;
   box-shadow: 0px 3.30351px 11.5623px rgba(0, 0, 0, 0.25);
-  border-radius: 33.0351px;
+  border-radius: 50px 50px 0px 0px / 25px 25px 0px 0px;
   transform: rotate(0.16deg);
-  clip-path: polygon(100% 0, 100% 86%, 100% 89%, 63% 91%, 41% 93%, 21% 95%, 0 100%, 0 0);
-
-  height:40vh;
-
+  width:100%;
 }
+
 
 .logo{
-  width: 15vh;
-  height:15vh;
+  width: 20vh;
+  height:20vh;
   color: rgb(180, 180, 210);
 }
+
+h2{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5vh;
+  line-height: 121%;
+
+  text-align: center;
+  color: #F7A600;
+  
+}
+
+
+p{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3vh;
+  line-height: 121%;
+
+  text-align: center;
+  color: #016590;
+}
+
+.btn1{
+  height: auto;
+  font-size:2.5vh;
+  padding:10px;  
+  
+   
+  background: #006281;
+  border: 0.800337px solid #006281;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5.60236px;   
+  color:white;
+}
+ 
+
+   
+
+.btn2 {   
+  height: auto;
+  font-size:2.5vh;
+  padding:10px;  
+
+   
+  background: #FFF7EA;
+  border: 1px solid #FFF7EA;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5.60236px;
+}
+
+
+
+
+
 
 
 
 h1{
+
   height: auto;
   width:80%; 
-  padding-top:5vh;
-  padding-bottom:5vh;
-  font-size: 6vh;
+  padding-top:4vh;
+  padding-bottom:4vh;
+
 
 /*  ++ */
   font-family: Comfortaa;
@@ -46,7 +105,6 @@ h1{
   line-height: 99.5%;
   text-align: center;
   color: #016590;
-  border: 0.244493px solid #016590;
 }
 
 
@@ -56,7 +114,7 @@ h1{
   padding-top:3vh;
 
 /*  ++ */
-  color: #F7A600;
+  color: white;
   font-size: 3vh;
   font-family: Montserrat;
   font-style: normal;
@@ -67,9 +125,9 @@ h1{
 .lien2{
   position: absolute;
   width: auto;
-  height: 10%;
-  left: 60%;
-  top:80vh;
+  height: 5vh;
+  right:10%;
+  top:90vh;
 
 /*  ++ */
   font-family: Montserrat;
@@ -86,66 +144,41 @@ h1{
 
 
 
-.btn1{
-  width: 256px;
-  height: 52.6px;
-  
-  top: 343px;
-  
-  background: #006281;
-  border: 0.800337px solid #006281;
-  box-sizing: border-box;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 5.60236px;     
-}
- 
 
-   
 
-.btn2 {   
-  width: 256px;
-  height: 52.6px;
-  top: 60vh;
-   
+input {
+  font-size: 10px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 12px;
+  color: #016590;
   background: #FFF7EA;
-  border: 1px solid #FFF7EA;
+  border: 1px solid #016590;
   box-sizing: border-box;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 5.60236px;
+  border-radius: 5px;
+
+  padding-left:1vh;
+  padding-top:1vh;
+  
 }
 
+form div {
+  padding-top:2vh;
+}
 
-h2{
+form label {
+
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 5vh;
-  line-height: 121%;
-
-  /* or 23px */
-  text-align: center;
-
-  color: #F7A600;;
-}
-
-
-
-
-
-
-
-p{
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 3vh;
-  line-height: 121%;
-
-  /* or 23px */
-  text-align: center;
+  font-size: 1.5vh;
+  line-height: 12px;
 
   color: #016590;
 
+
 }
 
 
@@ -158,43 +191,3 @@ p{
 
 
 
-
-
-  .btn1 router-link{
-    width: 178.85px;
-    height: 18.41px;
-
-    top: 50vh;
-
-    font-family: Comfortaa;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14.4061px;
-    line-height: 121%;
-
-
-    text-align: center;
-    color: #FFF7EA;
-    border: 0.2px solid #FFF7EA;
-}
-
-  
-  .btn2 router-link{
-  
-      width: 178.85px;
-      height: 18.41px;
-    
-      top: 60vh;
-  
-      font-family: Comfortaa;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14.4061px;
-      line-height: 121%;
-  
-      /* or 17px */
-      text-align: center;
-      color: #016590;
-      border: 0.2px solid #016590;
-  }
-  

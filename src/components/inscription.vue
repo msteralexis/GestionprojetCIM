@@ -78,6 +78,7 @@ export default {
     bottom:0;
     left:0;
     width:100%;
+    
 }
 .cadreInscription h2{
     text-align:left;

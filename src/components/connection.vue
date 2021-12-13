@@ -24,7 +24,7 @@ export default {
 
     <div class="row contenaire connection">
         
-        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadreConnection" style="margin-top:19.5vh; height:80vh;"> 
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadre" > 
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"  style="margin-top:10vh;">
                 <h2> Heureux de vous revoir !</h2>
@@ -37,12 +37,12 @@ export default {
                         <input type="email" name="email"  v-model="email">
                     </div>
                     <div>
-                        <input type="text"  name="mdp"  v-model="mdp" style="margin-top:5vh;">
+                        <input type="text"  name="mdp"  v-model="mdp" >
                     </div>
                 </form>
             </div>
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:20vh;">  
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:4vh;">  
                 <button class="btn1" >   Se Connecter </button>  
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:2vh;">  
@@ -73,17 +73,8 @@ export default {
     background-size: cover;
 }
 
-.cadreConnection{
-    background: #FFF7EA;
-    box-shadow: 0px 3.30351px 11.5623px rgba(0, 0, 0, 0.25);
-    border-radius: 50px 50px 0px 0px / 25px 25px 0px 0px;
-    transform: rotate(0.16deg);
-
-
-    width:100%;
-
- 
-    
+.cadre{
+   margin-top:19.5vh; height:80vh;
 }
 
 
