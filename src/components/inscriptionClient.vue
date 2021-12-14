@@ -9,7 +9,7 @@ export default {
     },
 	data(){
         return {
-            nom: "nom du restaurant",
+            nom: "nom",
             prenom: "prenom",
             email: "E-mail",
             mdp: "Mot de passe" 
@@ -28,12 +28,12 @@ export default {
         
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadre" > 
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"  style="margin-top:10vh;">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                 <h2> Rejoignez l'aventure Mijoto !</h2>
                 <p> créer un compte </p>
             </div>
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-top:4vh;">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                 <form >
                     <div>
                         <input type="text" name="nom"  v-model="nom">
@@ -51,24 +51,15 @@ export default {
                 </form>
             </div>
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-top:4vh;">  
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">  
                 <button class="btn1" >   S'inscrire  </button>  
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:2vh;">  
                 <router-link  to="/connection" style="color:#006281;font-size:1.5vh;" > Déja inscrit ? Se connecter</router-link> 
             </div>
         </div>
-
-
-        
-
-  
         
     </div>
-
-
-
-
 
 </template>
 

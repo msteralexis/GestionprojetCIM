@@ -29,12 +29,12 @@ export default {
         
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadre"> 
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"  style="margin-top:10vh;">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                 <h2> Rejoignez l'aventure Mijoto !</h2>
                 <p> créer un compte </p>
             </div>
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:5vh;" >
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"  >
                 <form >
                     <div>
                         <input type="text" name="nom"  v-model="nom">
@@ -66,7 +66,7 @@ export default {
                 </form>
             </div>
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:4vh;">  
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">  
                 <button class="btn1" >   S'inscrire </button>  
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:2vh;">  

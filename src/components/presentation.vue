@@ -7,19 +7,19 @@ export default {
 
                 
             if(this.counter == 3){
-                this.text = "<strong>  Rencontrez </strong>  du monde <br>  <strong> et Partagez </strong> "
+                this.text = "<strong>  Rencontrez </strong>  du monde <br>   et <strong> Partagez </strong> "
                 this.counter =  this.counter + 1
             }  
 
              if(this.counter == 2){
-                this.text = "Savouez le plat <br> <strong>  Préparez avec le chef </strong>  "
+                this.text = "Savourez le plat <br> <strong>  préparé avec le chef </strong>  "
                 this.counter =  this.counter + 1
             }  
               
             
            
             if(this.counter == 1){
-                this.text = " <strong> Inscrivez-vous </strong> <br> à un atellier cuisine "
+                this.text = " <strong> Inscrivez-vous </strong> <br> à un atelier cuisine "
                 this.counter = this.counter + 1
             }    
             
@@ -30,8 +30,8 @@ export default {
 	data(){
         return {
            counter: 1,
-           text: " Trouver <br> un atelier de cuisine <br><strong>Près de cher vous </strong> " ,
-           boutonText : " Prochain Etape ",
+           text: " Trouver <br> un atelier de cuisine <br><strong>Près de chez vous </strong> " ,
+           boutonText : " Prochaine étape",
             logo: "../assets/MijotoLogo__hat-orange.png"
         }
     }
@@ -55,7 +55,7 @@ export default {
 
 
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 logo"  style="padding-top:5vh;" >
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 logo" >
                 <img  v-if="this.counter==1" class="logo" src="../assets/toque1.png">
                 <img  v-if="this.counter==2" class="logo" src="../assets/toque2.png">
                 <img  v-if="this.counter==3" class="logo" src="../assets/toque3.png">
@@ -70,14 +70,14 @@ export default {
 
 
 
-             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
-              
+             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" > 
                 <button v-if="this.counter<4" class="btn1" v-on:click="suivant()"   v-html="boutonText" > </button> 
-
-                <button v-if="this.counter>=4" class="btn1"> 
-                    <router-link  class="lien1" to="/inscriptionConnection"> Commencer </router-link> 
-                </button> 
             </div>
+
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 margeRouterLink" > 
+                <router-link  v-if="this.counter>=4" class="btn1" to="/inscriptionConnection"> Commencer </router-link>     
+            </div>
+
 
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="position:absolute;top:70vh;width:80%; margin-left:20%; background-color:black; list-style-type:none;" >
@@ -112,8 +112,8 @@ export default {
 
     border-radius: 33.0351px;
     height:80vh; 
-    width:60%; 
-    margin-left:20%;
+    width:70%; 
+    margin-left:15%;
 }
 
 

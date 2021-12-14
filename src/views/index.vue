@@ -12,26 +12,22 @@
         </div>
 
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadrecadreAcceuil" >
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-left:10%;">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                 <h1 style="font-size:5vh;"> Apprenez <br> à cuisiner </h1>
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 lien1">
-                <router-link  to="/presentation" style=" color: #F7A600;"> En 4 Etapes</router-link> <br>
+                <h2> En 4 étapes</h2>
+            </div>
+              <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 margeRouterLink">
+                <router-link  class="btn1" to="/presentation" > Commencer ! </router-link>
             </div>
         </div>
 
-      
-        
-
-
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-            <router-link  class="lien2" to="/inscriptionConnection"> Je passe les Etapes ></router-link> 
+            <router-link  class="lien2" to="/inscriptionConnection"> Je passe les étapes ></router-link> 
         </div>
         
     </div>
-
-
-
 
 </template>
 

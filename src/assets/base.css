@@ -1,8 +1,4 @@
-
-
-
-main, .contenaire{ 
-   
+main, .contenaire{   
   display: flex;
   align-items: center;
   text-align:center;
@@ -10,9 +6,11 @@ main, .contenaire{
   margin:0;
   height:100vh;
   width:100%;
+  
   font-size:2vh;
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: normal;
 }
-
 
 .cadre{
   background: #FFF7EA;
@@ -22,29 +20,32 @@ main, .contenaire{
   width:100%;
 }
 
-
 .logo{
-  width: 20vh;
-  height:20vh;
+  height:15vh;
   color: rgb(180, 180, 210);
+  margin-top:4vh;
+}
+
+h1{
+  font-weight: bold;
+  line-height: 99.5%;
+  text-align: center;
+  color: #016590;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 h2{
-  font-family: Montserrat;
-  font-style: normal;
+  padding-top:5vh;
   font-weight: bold;
   font-size: 5vh;
   line-height: 121%;
 
   text-align: center;
   color: #F7A600;
-  
+  font-family: 'Comfortaa', sans-serif;
 }
 
-
 p{
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 3vh;
   line-height: 121%;
@@ -53,75 +54,6 @@ p{
   color: #016590;
 }
 
-.btn1{
-  height: auto;
-  font-size:2.5vh;
-  padding:10px;  
-  
-   
-  background: #006281;
-  border: 0.800337px solid #006281;
-  box-sizing: border-box;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 5.60236px;   
-  color:white;
-}
- 
-
-   
-
-.btn2 {   
-  height: auto;
-  font-size:2.5vh;
-  padding:10px;  
-
-   
-  background: #FFF7EA;
-  border: 1px solid #FFF7EA;
-  box-sizing: border-box;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 5.60236px;
-}
-
-
-
-
-
-
-
-
-h1{
-
-  height: auto;
-  width:80%; 
-  padding-top:4vh;
-  padding-bottom:4vh;
-
-
-/*  ++ */
-  font-family: Comfortaa;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 99.5%;
-  text-align: center;
-  color: #016590;
-}
-
-
-.lien1{
-  height: auto;
-  width:80%;
-  padding-top:3vh;
-
-/*  ++ */
-  color: white;
-  font-size: 3vh;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;  
-}
-
-
 .lien2{
   position: absolute;
   width: auto;
@@ -129,9 +61,6 @@ h1{
   right:10%;
   top:90vh;
 
-/*  ++ */
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
   font-size: 3vh;
   line-height: 18px;
@@ -142,15 +71,64 @@ h1{
   text-shadow: 0px 2px 16px rgba(0, 0, 0, 0.56), 0px 1px 14px rgba(0, 0, 0, 0.49);
 }
 
+.lien2:hover{
+  color: #FFF7EA;
+
+}
+
+.btn1{
+  background: #006281;
+  border: 0.800337px solid #006281;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5.60236px;   
+  color:white;
+
+  height: auto;
+  font-size:2vh;
+  padding:15px;  
+  margin-top:4vh;
+  text-decoration:none; 
+  font-family: 'Comfortaa', sans-serif;
+}
+ 
+.btn2 {     
+  background: #FFF7EA;
+  border: 1px solid #FFF7EA;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5.60236px;
+
+  font-size:2vh;
+  margin-top:5vh;
+  padding:15px; 
+  text-decoration:none;
+  color:#016590;
+  border: 0.800337px solid #016590;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.btn1:hover{
+  background: #003D50;
+  color:#FFF7EA;
+}
+
+.btn2:hover{
+  background: #feebc0;
+  color:#003D50;
+}
+.margeRouterLink{
+  margin-top:5vh;
+}
 
 
 
+/* formulaire */
+form{
+  margin-top:5vh;
+}
 
 input {
-  font-size: 10px;
-
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   line-height: 12px;
   color: #016590;
@@ -159,9 +137,9 @@ input {
   box-sizing: border-box;
   border-radius: 5px;
 
+  font-size: 10px;
   padding-left:1vh;
   padding-top:1vh;
-  
 }
 
 form div {
@@ -169,18 +147,11 @@ form div {
 }
 
 form label {
-
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 1.5vh;
   line-height: 12px;
-
   color: #016590;
-
-
 }
-
 
 
 
