@@ -33,6 +33,8 @@ export default {
 </template>
 
 <style>
-  @import '@/assets/base.css';
-  @import '@/assets/boostrap.css';
+
+   @import '@/assets/base.css';
+   @import '@/assets/boostrap.css'; 
+
 </style>

@@ -12,7 +12,7 @@
         </div>
 
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadrecadreAcceuil" >
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-top:2vh;">
                 <h1 style="font-size:5vh;"> Apprenez <br> à cuisiner </h1>
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 lien1">
@@ -36,23 +36,21 @@
 
 
 .acceuil{
-    background-image:url("../assets/tijana-drndarski-7cXfIm5x7Fk-unsplash.jpg");
+    background-image:url("../assets/img-background.jpg");
     background-repeat:no-repeat;
     background-size: cover;
 }
 
 .cadrecadreAcceuil{
-  background: #FFF7EA;
-  box-shadow: 0px 3.30351px 11.5623px rgba(0, 0, 0, 0.25);
-  border-radius: 33.0351px;
-  transform: rotate(0.16deg);
-  clip-path: polygon(100% 0, 100% 86%, 100% 89%, 63% 91%, 41% 93%, 21% 95%, 0 100%, 0 0);
+    background-image:url("../assets/Bullevague-pres.png");
+      background-repeat:no-repeat;
+    background-size: cover;
 
   height:50vh;
+    width:85%;
 
-  width:60%; 
-  margin-left:20%;
-  padding-top:3vh;
+    margin-left:7.5%;
+    padding-top:3vh;
 }
 
 

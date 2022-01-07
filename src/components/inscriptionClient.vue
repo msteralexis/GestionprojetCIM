@@ -9,8 +9,8 @@ export default {
     },
 	data(){
         return {
-            nom: "nom",
-            prenom: "prenom",
+            nom: "Nom",
+            prenom: "Prenom",
             email: "E-mail",
             mdp: "Mot de passe" 
         }
@@ -29,33 +29,46 @@ export default {
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadre" > 
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
-                <h2> Rejoignez l'aventure Mijoto !</h2>
-                <p> créer un compte </p>
+                <h2 style="font-weight:bold;"> Rejoignez l'aventure <br> Mijoto !</h2>
+                <p style="font-size:2.5vh;">  Créer un compte </p>
             </div>
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                 <form >
                     <div>
-                        <input type="text" name="nom"  v-model="nom">
+                        <input class="modifInput" type="text" name="nom"  v-model="nom">
                     </div>
                     <div>
-                        <input type="text" name="prenom"  v-model="prenom">
+                        <input class="modifInput" type="text" name="prenom"  v-model="prenom">
                     </div>
                     
                     <div>
-                        <input type="email" name="email"  v-model="email">
+                        <input  class="modifInput" type="email" name="email"  v-model="email">
                     </div>
                     <div>
-                        <input type="text"  name="mdp"  v-model="mdp" >
+                        <input class="modifInput" type="text"  name="mdp"  v-model="mdp" >
                     </div>
+
+
+                    <div >
+                        <input id="carreCoche" type="checkbox" name="scales">
+                        <label id="carreCoche2" for="scales">Je souhaite recevoir les newletters concernant les évènement Mijoto</label>
+                    </div>
+
+                    <div  >
+                        <input id="carreCocheBis" type="checkbox" name="scales">
+                        <label id="carreCoche2Bis" for="scales">J'accepte les conditions d'utilisation de Mijoto</label>
+                    </div>
+
+                    
                 </form>
             </div>
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">  
-                <button class="btn1" >   S'inscrire  </button>  
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-top:10vh;">  
+                <button class="btn1" style="width:256px;" >   S'inscrire  </button>  
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:2vh;">  
-                <router-link  to="/connection" style="color:#006281;font-size:1.5vh;" > Déja inscrit ? Se connecter</router-link> 
+                <router-link  to="/inscriptionClientGout" style="color:#006281;font-size:1.5vh;" > Déja inscrit ? Se connecter</router-link> 
             </div>
         </div>
         

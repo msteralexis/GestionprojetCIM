@@ -153,12 +153,9 @@ form label {
   color: #016590;
 }
 
-
-
-
-
-
-
+.modifInput{
+  width: 256px; height: 44px; background: #FFF7EA; border: 1px solid #016590; box-sizing: border-box; border-radius: 5px;
+}
 
 
 

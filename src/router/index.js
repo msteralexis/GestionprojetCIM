@@ -47,8 +47,17 @@ const router = createRouter({
       path: '/inscriptionClient',
       name: 'inscriptionClient',
       component: () => import('../components/inscriptionClient.vue')
+    },
+    {
+      path: '/inscriptionClientGout',
+      name: 'inscriptionClientGout',
+      component: () => import('../components/inscriptionClientGout.vue')
     }
     
+
+
+
+
 
   ]
 })
