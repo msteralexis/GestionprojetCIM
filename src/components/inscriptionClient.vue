@@ -68,7 +68,7 @@ export default {
                 <button class="btn1" style="width:256px;" >   S'inscrire  </button>  
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:2vh;">  
-                <router-link  to="/inscriptionClientGout" style="color:#006281;font-size:1.5vh;" > Déja inscrit ? Se connecter</router-link> 
+                <router-link  to="/connection" style="color:#006281;font-size:1.5vh;" > Déja inscrit ? Se connecter</router-link> 
             </div>
         </div>
         

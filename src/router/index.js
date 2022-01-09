@@ -54,7 +54,7 @@ const router = createRouter({
       component: () => import('../components/inscriptionClientGout.vue')
     },
     {
-      path: '/acceuilClients',
+      path: '/acceuilClients/:nom',
       name: 'acceuilClients',
       component: () => import('../components/acceuilClients.vue')
     },

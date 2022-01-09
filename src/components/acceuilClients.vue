@@ -18,7 +18,7 @@ export default {
     <div class="row contenaire" id="fondAcceuilClient" > 
         <img style="width:60%;height:30vh;position:absolute;top:5vh;left:20%;" src="../assets/accueilClient/Ellipse 32.png">   
         <h2 style=" z-index:10;position:absolute;top:10vh;left:0%;font-size:31px; "> Bonjour </h2>  
-        <p style="z-index:10;position:absolute;top:21vh;left:0%;font-size:31px; ">  Lydie ! </p>     
+        <p style="z-index:10;position:absolute;top:21vh;left:0%;font-size:31px; ">  {{ $route.params.nom }} ! </p>     
 
 
 

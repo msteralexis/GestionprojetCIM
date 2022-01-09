@@ -3,8 +3,21 @@
 
 export default {
     methods: {
-        suivant(){  
-   
+        connectionUsers( listuser ){
+            
+            listuser.forEach((item, index) => {
+                if(item.mail == this.email &&  item.mdp == this.mdp){
+                    // si numero a 0 alors utilisateur
+                    if(item.numero==0) {
+                        this.$router.push('/acceuilClients/'+item.nom) 
+                    }else{ // sinon restaurateur
+                        this.$router.push('/acceuilRestaurateurs') 
+                    }
+                    
+                }
+            
+            })
+ 
         }
     },
 	data(){
@@ -34,10 +47,10 @@ export default {
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                 <form >
                     <div>
-                        <input class="modifInput"  type="email" name="email"  v-model="email">
+                        <input class="modifInput"  type="email" name="email" @click="email=' '" v-model="email">
                     </div>
                     <div>
-                        <input class="modifInput"  type="text"  name="mdp"  v-model="mdp" >
+                        <input class="modifInput"  type="text"  name="mdp"  @click="mdp=' '" v-model="mdp" >
                     </div>
                     <div style="text-align:left;"> 
                         <input  style="margin-left:64px;" type="checkbox" name="scales">
@@ -48,7 +61,7 @@ export default {
             </div>
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >  
-                <button class="btn1" style="width:256px;" >   Se connecter </button>  
+                <button class="btn1" style="width:256px;" @click="connectionUsers($store.state.users)" >   Se connecter </button>  
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:2vh;">  
                 <router-link  to="/inscription" style="color:#006281;font-size:1.5vh;" > Pas encore de compte ? <strong >  S'inscrire  </strong></router-link> 
