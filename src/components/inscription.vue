@@ -15,7 +15,7 @@ export default {
 
 <template> 
     
-      <div class="row contenaire fondInscription">
+    <div class="row contenaire fondInscription">
 
      
 

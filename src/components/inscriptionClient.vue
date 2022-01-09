@@ -29,7 +29,7 @@ export default {
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadre" > 
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
-                <h2 style="font-weight:bold;"> Rejoignez l'aventure <br> Mijoto !</h2>
+                <h2> Rejoignez l'aventure <br> Mijoto !</h2>
                 <p style="font-size:2.5vh;">  Créer un compte </p>
             </div>
 

@@ -52,12 +52,23 @@ const router = createRouter({
       path: '/inscriptionClientGout',
       name: 'inscriptionClientGout',
       component: () => import('../components/inscriptionClientGout.vue')
+    },
+    {
+      path: '/acceuilClients',
+      name: 'acceuilClients',
+      component: () => import('../components/acceuilClients.vue')
+    },
+    {
+      path: '/acceuilRestaurateurs',
+      name: 'acceuilRestaurateurs',
+      component: () => import('../components/acceuilRestaurateurs.vue')
+    },
+    {
+      path: '/atelier/:toto',
+      name: 'atelier',
+      component: () => import('../components/atelier.vue')
     }
     
-
-
-
-
 
   ]
 })

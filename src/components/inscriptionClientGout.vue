@@ -39,7 +39,7 @@ export default {
                 
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 ligne">
                         <article>
-                            <img  src="../assets/MijotoLogo__logo-blue.png">
+                            <img  src="../assets/goutsCulinaires/andraz-lazic-iy_MT2ifklc-unsplash.jpg">
                             <h5> Américaine</h5>
                         </article>
 
@@ -189,7 +189,9 @@ article{
 
 }
 article img{
-    height:12vh;
+    height:10vh;
+    width:100%;
+    border-radius:10px;
 }
 h5{
     font-family: Montserrat;
