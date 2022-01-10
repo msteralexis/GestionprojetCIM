@@ -49,7 +49,7 @@
   height:50vh;
     width:85%;
 
-    margin-left:7.5%;
+    margin-left:10%;
     padding-top:3vh;
 }
 

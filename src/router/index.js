@@ -54,7 +54,7 @@ const router = createRouter({
       component: () => import('../components/inscriptionClientGout.vue')
     },
     {
-      path: '/acceuilClients/:nom',
+      path: '/acceuilClients/:index',
       name: 'acceuilClients',
       component: () => import('../components/acceuilClients.vue')
     },
@@ -64,7 +64,7 @@ const router = createRouter({
       component: () => import('../components/acceuilRestaurateurs.vue')
     },
     {
-      path: '/atelier/:toto',
+      path: '/atelier/:index/:numeroUsers',
       name: 'atelier',
       component: () => import('../components/atelier.vue')
     }

@@ -9,7 +9,8 @@ export default {
                 if(item.mail == this.email &&  item.mdp == this.mdp){
                     // si numero a 0 alors utilisateur
                     if(item.numero==0) {
-                        this.$router.push('/acceuilClients/'+item.nom) 
+                     
+                        this.$router.push('/acceuilClients/'+index) 
                     }else{ // sinon restaurateur
                         this.$router.push('/acceuilRestaurateurs') 
                     }
@@ -47,10 +48,10 @@ export default {
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                 <form >
                     <div>
-                        <input class="modifInput"  type="email" name="email" @click="email=' '" v-model="email">
+                        <input class="modifInput"  type="email" name="email" @click="email=''" v-model="email">
                     </div>
                     <div>
-                        <input class="modifInput"  type="text"  name="mdp"  @click="mdp=' '" v-model="mdp" >
+                        <input class="modifInput"  type="text"  name="mdp"  @click="mdp=''" v-model="mdp" >
                     </div>
                     <div style="text-align:left;"> 
                         <input  style="margin-left:64px;" type="checkbox" name="scales">

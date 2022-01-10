@@ -3,8 +3,28 @@
 
 export default {
     methods: {
-        suivant(){  
-   
+        ajoustClients( listuser ){  
+            listuser.forEach((item, index) => {
+
+                // si l'utilisateur existe deja et est clients
+                if(item.mail == this.email && item.numero == 0){
+                    alert('mail deja existant')     
+                }
+            
+            })
+
+            // vérification des données saisie
+            if( this.nom.length > 3 && this.prenom.length > 3 && this.mdp.length > 3  ) {
+                
+                this.users = { nomRestaurant: 'aucun', numero: 0, localisation:'Lyon', mail:this.email,mdp:this.mdp,nom: this.nom ,prenom: this.prenom }
+                this.$store.commit('ajoutsUsers', this.users)
+                this.$router.push('/connection') 
+      
+            }else{
+                alert("erreur dans la saisie")
+            }
+
+
         }
     },
 	data(){
@@ -12,7 +32,8 @@ export default {
             nom: "Nom",
             prenom: "Prenom",
             email: "E-mail",
-            mdp: "Mot de passe" 
+            mdp: "Mot de passe" ,
+            users:   { nomRestaurant: 'Berk', numero: 8, localisation:'Lyon', mail:'test3@gmail.com',mdp:'test3',nom:'jojo3',prenom:'toto3' }
         }
     }
 
@@ -36,17 +57,17 @@ export default {
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                 <form >
                     <div>
-                        <input class="modifInput" type="text" name="nom"  v-model="nom">
+                        <input class="modifInput" type="text" name="nom"  @click="nom=' '" v-model="nom">
                     </div>
                     <div>
-                        <input class="modifInput" type="text" name="prenom"  v-model="prenom">
+                        <input class="modifInput" type="text" name="prenom"  @click="prenom=' '" v-model="prenom">
                     </div>
                     
                     <div>
-                        <input  class="modifInput" type="email" name="email"  v-model="email">
+                        <input  class="modifInput" type="email" name="email" @click="email=' '"  v-model="email">
                     </div>
                     <div>
-                        <input class="modifInput" type="text"  name="mdp"  v-model="mdp" >
+                        <input class="modifInput" type="text"  name="mdp"  @click="mdp=' '" v-model="mdp" >
                     </div>
 
 
@@ -64,8 +85,8 @@ export default {
                 </form>
             </div>
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-top:10vh;">  
-                <button class="btn1" style="width:256px;" >   S'inscrire  </button>  
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-top:5vh;">  
+                <button class="btn1" style="width:256px;" @click="ajoustClients($store.state.users)">   S'inscrire  </button>  
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:2vh;">  
                 <router-link  to="/connection" style="color:#006281;font-size:1.5vh;" > Déja inscrit ? Se connecter</router-link> 
