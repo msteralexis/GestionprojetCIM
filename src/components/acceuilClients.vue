@@ -25,8 +25,8 @@ export default {
     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadreInscription"> 
 
             <div class="row contenaire" id="fondAcceuilClient" > 
-                <img style="width:60%;height:30vh;position:absolute;top:5vh;left:20%;" src="../assets/accueilClient/Ellipse 32.png">   
-                <h2 style=" z-index:10;position:absolute;top:10vh;left:0%;font-size:31px; "> Bonjour </h2>  
+                <img style="width:60%;height:30vh;position:absolute;top:5vh;left:20%;" src="../assets/accueilClient/Ellipse32.png">   
+                <h2 style=" z-index:10;position:absolute;top:10vh;left:40%;font-size:31px; "> Bonjour </h2>  
                 <p style="z-index:10;position:absolute;top:21vh;left:0%;font-size:auto; ">  {{ $store.state.users[$route.params.index].nom }} ! </p>     
 
             </div>
@@ -193,13 +193,13 @@ export default {
 
                    
                 <li>
-                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/magnifying-glass (1).png'> <br> 
+                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/1.png'> <br> 
                     <a style="color: #016590;font-size:1.4vh;"> Recherche </a>
                 </li>
 
                    
                 <li>
-                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/calendar-silhouette (2).png'> <br> 
+                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/2.png'> <br> 
                     <a style="color: #016590;font-size:1.4vh;"> Evenement </a>
                 </li>
 

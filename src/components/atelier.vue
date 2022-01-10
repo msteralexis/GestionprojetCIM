@@ -52,11 +52,11 @@ export default {
 
 
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
-            <img  class="t2"   src='../assets/atelier/Vector 8.png'>
+            <img  class="t2"   src='../assets/atelier/Vector8.png'>
         </div> 
 
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
-            <img  class="t3" src='../assets/atelier/Vector 9.png'>
+            <img  class="t3" src='../assets/atelier/Vector9.png'>
             <p style="z-index:15; text-align: center; font-size:16px;color: #FFF7EA; position:absolute;top:40vh;left:41%;"> le <br>{{ $store.state.atelier[$route.params.index].date }} </p> 
             
             
