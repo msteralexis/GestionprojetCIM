@@ -1,6 +1,0 @@
-{
-    "require": {
-        "rmccue/requests": "^1.8",
-        "mikecao/flight": "^1.3"
-    }
-}
