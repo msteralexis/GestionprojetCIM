@@ -71,21 +71,21 @@ export default {
                     </div>
 
 
-                    <div >
-                        <input id="carreCoche" type="checkbox" name="scales">
-                        <label id="carreCoche2" for="scales">Je souhaite recevoir les newletters concernant les évènement Mijoto</label>
+                    <div style="text-align:left;">
+                        <input   style="margin-left:64px;"  type="checkbox" name="scales">
+                        <label style="margin-left:10px;width:70%;" for="scales">Je souhaite recevoir les newletters concernant les évènement Mijoto</label>
                     </div>
 
-                    <div  >
-                        <input id="carreCocheBis" type="checkbox" name="scales">
-                        <label id="carreCoche2Bis" for="scales">J'accepte les conditions d'utilisation de Mijoto</label>
+                    <div  style="text-align:left;">
+                        <input   style="margin-left:64px;"  type="checkbox" name="scales">
+                        <label  style="margin-left:10px;width:70%;" for="scales">J'accepte les conditions d'utilisation de Mijoto</label>
                     </div>
 
                     
                 </form>
             </div>
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-top:5vh;">  
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:2vh;">  
                 <button class="btn1" style="width:256px;" @click="ajoustClients($store.state.users)">   S'inscrire  </button>  
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:2vh;">  

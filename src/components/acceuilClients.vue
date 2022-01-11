@@ -26,7 +26,7 @@ export default {
 
             <div class="row contenaire" id="fondAcceuilClient" > 
                 <img style="width:60%;height:30vh;position:absolute;top:5vh;left:20%;" src="../assets/accueilClient/Ellipse32.png">   
-                <h2 style=" z-index:10;position:absolute;top:10vh;left:40%;font-size:31px; "> Bonjour </h2>  
+                <h2 style=" z-index:10;position:absolute;top:10vh;left:25%;font-size:31px;width:50%; "> Bonjour </h2>  
                 <p style="z-index:10;position:absolute;top:21vh;left:0%;font-size:auto; ">  {{ $store.state.users[$route.params.index].nom }} ! </p>     
 
             </div>
@@ -36,7 +36,7 @@ export default {
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                 <p style=" text-align:left;width:80%;
-               z-index:10;font-size: 14px; line-height: 22px; color: #F7A600; border: 0.4px solid #F7A600; "> Proche de chez vous </p>  
+               z-index:10;font-size: 14px; line-height: 22px; color: #F7A600;  "> Proche de chez vous </p>  
            
               
                 <div class="listeAtelier" >
@@ -85,7 +85,7 @@ export default {
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                 <p style=" text-align:left;width:80%;
-               z-index:10;font-size: 14px; line-height: 22px; color: #F7A600; border: 0.4px solid #F7A600; "> Selon vos envies </p>  
+               z-index:10;font-size: 14px; line-height: 22px; color: #F7A600;  "> Selon vos envies </p>  
               
               
                 <div class="listeAtelier" >
@@ -136,7 +136,7 @@ export default {
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-bottom:10vh;" >
                 <p style=" text-align:left;width:80%;
-               z-index:10;font-size: 14px; line-height: 22px; color: #F7A600; border: 0.4px solid #F7A600; "> Les événements du mois </p>  
+               z-index:10;font-size: 14px; line-height: 22px; color: #F7A600;  "> Les événements du mois </p>  
               
               
                 <div class="listeAtelier" >
@@ -262,7 +262,8 @@ export default {
     position:absolute;
     top:0;
     left:0;
-    width:100%;
+    text-align:center;
+  
 
     z-index:2;
 
