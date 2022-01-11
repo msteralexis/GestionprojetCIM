@@ -33,6 +33,7 @@ export default {
             prenom: "Prenom",
             email: "E-mail",
             mdp: "Mot de passe" ,
+            localisation: "Localisation",
             users:   { nomRestaurant: 'Berk', numero: 8, localisation:'Lyon', mail:'test3@gmail.com',mdp:'test3',nom:'jojo3',prenom:'toto3' }
         }
     }
@@ -62,6 +63,9 @@ export default {
                     <div>
                         <input class="modifInput" type="text" name="prenom"  @click="prenom=' '" v-model="prenom">
                     </div>
+                    <div>
+                        <input  class="modifInput" type="email" name="email" @click="localisation=' '"  v-model="localisation">
+                    </div>
                     
                     <div>
                         <input  class="modifInput" type="email" name="email" @click="email=' '"  v-model="email">
@@ -85,10 +89,10 @@ export default {
                 </form>
             </div>
 
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:2vh;">  
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >  
                 <button class="btn1" style="width:256px;" @click="ajoustClients($store.state.users)">   S'inscrire  </button>  
             </div>
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-top:2vh;">  
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">  
                 <router-link  to="/connection" style="color:#006281;font-size:1.5vh;" > Déja inscrit ? Se connecter</router-link> 
             </div>
         </div>
@@ -109,8 +113,8 @@ export default {
 
 
 .cadre{
-    margin-top:9.5vh; 
-    height:90vh;
+    margin-top:4.5vh; 
+    height:95vh;
 }
 
 

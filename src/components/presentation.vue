@@ -128,7 +128,7 @@ export default {
     border-radius: 33.0351px;
     height:80vh; 
     width:80%; 
-    margin-left:15%;
+    margin-left:12.5%;
  
 }
 
