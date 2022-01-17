@@ -21,7 +21,7 @@ export default {
                 this.$router.push('/connection') 
       
             }else{
-                alert("erreur dans la saisie")
+                alert("Erreur dans la saisie")
             }
 
 
@@ -47,7 +47,7 @@ export default {
 
     <div class="row contenaire connection">
         
-        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadre"> 
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadre" style=" margin-top:4.9vh; height:95vh;"> 
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                 <h2 style="font-weight:bold;"> Rejoignez l'aventure <br> Mijoto !</h2>
@@ -57,29 +57,29 @@ export default {
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="position:absolute;top:15vh;width:80%;left:10%;" >
                 <form >
                     <div>
-                        <input class="modifInput" type="text" name="nom" @click="nom=' '"  v-model="nom">
+                        <input placeholder="Nom du restaurant" class="modifInput" type="text" name="nom" @click="nom=''"  v-model="nom">
                     </div>
                     <div>
-                        <input class="modifInput" type="text" name="siret" @click="siret=' '" v-model="siret">
+                        <input placeholder="N° de Siret" class="modifInput" type="text" name="siret" @click="siret=''" v-model="siret">
                     </div>
                        <div>
-                        <input class="modifInput" type="text" name="localisation:" @click="localisation=' '" v-model="localisation">
+                        <input placeholder="Localisation" class="modifInput" type="text" name="localisation:" @click="localisation=''" v-model="localisation">
                     </div>
                     <div>
-                        <input class="modifInput" type="email" name="email"  @click="email=' '" v-model="email">
+                        <input placeholder="E-mail" class="modifInput" type="email" name="email"  @click="email=''" v-model="email">
                     </div>
                     <div>
-                        <input class="modifInput" type="text"  name="mdp" @click="mdp=' '"  v-model="mdp">
+                        <input placeholder="Mot de passe" class="modifInput" type="text"  name="mdp" @click="mdp=''"  v-model="mdp">
                     </div>
 
-                    <div >
-                        <input  type="checkbox" name="scales">
-                        <label style="margin-left:10px;width:80%;" for="scales">Je souhaite recevoir les newletters concernant les évènement Mijoto</label>
+                    <div style="text-align:left;">
+                        <input  type="checkbox" name="scales" style="margin-left:30px;">
+                        <label style="margin-left:7px;width:80%;" for="scales">Je souhaite recevoir les newletters concernant les évènement Mijoto</label>
                     </div>
 
-                    <div  >
-                        <input  type="checkbox" name="scales">
-                        <label style="margin-left:10px;" for="scales">J'accepte les conditions d'utilisation de Mijoto</label>
+                    <div  style="text-align:left;">
+                        <input  type="checkbox" name="scales" style="margin-left:30px;">
+                        <label style="margin-left:7px;width:80%;"  for="scales">J'accepte les conditions d'utilisation de Mijoto</label>
                     </div>
 
                 </form>
@@ -117,11 +117,6 @@ export default {
     background-image:url("../assets/dane-deaner-TXHml4xX9A0-unsplash.jpg");
     background-repeat:no-repeat;
     background-size: cover;
-}
-
-.cadre{
-    margin-top:4.9vh; 
-    height:95vh;
 }
 
 

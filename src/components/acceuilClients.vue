@@ -36,7 +36,7 @@ export default {
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                 <p style=" text-align:left;width:80%;
-               z-index:10;font-size: 14px; line-height: 22px; color: #F7A600;  "> Proche de chez vous </p>  
+               z-index:10;font-size: 18px; line-height: 22px;margin-left:6%; color: #F7A600;  "> Proche de chez vous </p>  
            
               
                 <div class="listeAtelier" >
@@ -85,7 +85,7 @@ export default {
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                 <p style=" text-align:left;width:80%;
-               z-index:10;font-size: 14px; line-height: 22px; color: #F7A600;  "> Selon vos envies </p>  
+               z-index:10;font-size: 18px; line-height: 22px;margin-left:6%; color: #F7A600;   "> Selon vos envies </p>  
               
               
                 <div class="listeAtelier" >
@@ -136,7 +136,7 @@ export default {
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-bottom:10vh;" >
                 <p style=" text-align:left;width:80%;
-               z-index:10;font-size: 14px; line-height: 22px; color: #F7A600;  "> Les événements du mois </p>  
+               z-index:10;font-size: 18px; line-height: 22px;margin-left:6%; color: #F7A600;   "> Les événements du mois </p>  
               
               
                 <div class="listeAtelier" >
@@ -184,29 +184,28 @@ export default {
     
 
         <div id="menu">
-
             <ul>     
                 <li>
-                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/contour-circulaire-de-lhorloge.png'> <br> 
-                    <a style="color: #016590;font-size:1.4vh;"> Accueil</a>
+                    <img  style="width:85%;" src='../assets/icons/home.png'> <br> 
+                    <a > Accueil</a>
                 </li>
 
                    
                 <li>
-                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/1.png'> <br> 
-                    <a style="color: #016590;font-size:1.4vh;"> Recherche </a>
+                    <img   src='../assets/icons/1.png'> <br> 
+                    <a > Recherche </a>
                 </li>
 
                    
                 <li>
-                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/2.png'> <br> 
-                    <a style="color: #016590;font-size:1.4vh;"> Evenement </a>
+                    <img   src='../assets/icons/2.png'> <br> 
+                    <a > Evenement </a>
                 </li>
 
                    
                 <li>
-                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/zz.png'> <br> 
-                    <a style="color: #016590;font-size:1.4vh;"> Mon compte </a>
+                    <img   src='../assets/icons/zz.png'> <br> 
+                    <a > Mon compte </a>
                 </li>
             </ul>
 
@@ -234,10 +233,12 @@ export default {
 
 
 <style>
-
+#menu img{
+    margin-top:1vh;margin-left:10%;height:4vh;width:60%;
+}
 #menu{
     position:fixed;bottom:0;left:0;width:100%;height:8vh;background-color:white;
-      list-style-type:none;  
+      list-style-type:none;  text-align:center;
 }
 
 
@@ -251,6 +252,12 @@ export default {
     margin-left:10%;;
     float:left; 
 }
+
+
+#menu li a{
+    color: #016590;font-size:1.4vh;
+}
+
 
 
 #fondAcceuilClient{
@@ -295,26 +302,20 @@ article p{
     text-align:left;
 }
 article img{
-    width:150px;height:15vh;
+    width:150px;height:17vh;
 
 }
 
 
-.listeAtelier{
-    padding-top:2vh;
+.listeAtelier{ 
     width:auto;
-    height:auto;
-    
+    height:auto; 
     
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    margin-top: 20px;
-
+    padding-top: 1vh;
     scrollbar-width: none;
-
-    
-
 }
 
 

@@ -21,7 +21,7 @@ export default {
                 this.$router.push('/connection') 
       
             }else{
-                alert("erreur dans la saisie")
+                alert("Erreur dans la saisie")
             }
 
 
@@ -48,7 +48,7 @@ export default {
 
     <div class="row contenaire connection">
         
-        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadre" > 
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadre" style="margin-top:4.5vh; height:95vh;" > 
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                 <h2> Rejoignez l'aventure <br> Mijoto !</h2>
@@ -58,31 +58,31 @@ export default {
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                 <form >
                     <div>
-                        <input class="modifInput" type="text" name="nom"  @click="nom=' '" v-model="nom">
+                        <input placeholder="Nom" class="modifInput" type="text" name="nom"  @click="nom=''" v-model="nom">
                     </div>
                     <div>
-                        <input class="modifInput" type="text" name="prenom"  @click="prenom=' '" v-model="prenom">
+                        <input placeholder="Prenom" class="modifInput" type="text" name="prenom"  @click="prenom=''" v-model="prenom">
                     </div>
                     <div>
-                        <input  class="modifInput" type="email" name="email" @click="localisation=' '"  v-model="localisation">
+                        <input  placeholder="Localisation" class="modifInput" type="email" name="email" @click="localisation=''"  v-model="localisation">
                     </div>
                     
                     <div>
-                        <input  class="modifInput" type="email" name="email" @click="email=' '"  v-model="email">
+                        <input placeholder="E-mail" class="modifInput" type="email" name="email" @click="email=''"  v-model="email">
                     </div>
                     <div>
-                        <input class="modifInput" type="text"  name="mdp"  @click="mdp=' '" v-model="mdp" >
+                        <input placeholder="Mot de passe" class="modifInput" type="text"  name="mdp"  @click="mdp=''" v-model="mdp" >
                     </div>
 
 
                     <div style="text-align:left;">
                         <input   style="margin-left:64px;"  type="checkbox" name="scales">
-                        <label style="margin-left:10px;width:70%;" for="scales">Je souhaite recevoir les newletters concernant les évènement Mijoto</label>
+                        <label style="margin-left:5px;width:65%;" for="scales">Je souhaite recevoir les newletters concernant les évènement Mijoto</label>
                     </div>
 
                     <div  style="text-align:left;">
                         <input   style="margin-left:64px;"  type="checkbox" name="scales">
-                        <label  style="margin-left:10px;width:70%;" for="scales">J'accepte les conditions d'utilisation de Mijoto</label>
+                        <label  style="margin-left:5px;width:65%;" for="scales">J'accepte les conditions d'utilisation de Mijoto</label>
                     </div>
 
                     
@@ -112,10 +112,7 @@ export default {
 }
 
 
-.cadre{
-    margin-top:4.5vh; 
-    height:95vh;
-}
+
 
 
 

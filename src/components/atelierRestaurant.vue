@@ -35,8 +35,8 @@ export default {
     <div class="row contenaire" style="background-color: #FFF7EA;"> 
 
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="height:15vh;width:100%;position:absolute;top:0;left:0;text-align:center;justify-content:center;">
-            <a style="position: absolute; top:4vh; left:5%; z-index:25;color: #016590; font-size:2vh;background-color: white; "  v-on:click.once="retour($route.params.numeroUsers)">  Retour </a> 
-            <p style="font-weight: bold;  line-height: 20px; text-align: center; color: #016590; padding-top:4vh; "> {{ $store.state.atelier[$route.params.index].nom }}   </p>
+            <a style="position: absolute; top:4vh; left:5%; z-index:25;color: #016590; font-size:2vh;background-color: white; "  v-on:click.once="retour('restaurateur')">  Retour </a> 
+            <p style="font-weight: bold;  line-height: 20px; text-align: center; color: #016590; padding-top:4vh; "> {{ $store.state.atelierRestaurateur[$route.params.index].nom }}   </p>
         </div> 
 
 
@@ -54,22 +54,22 @@ export default {
 
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
             <img  class="t3" src='../assets/atelier/Vector9.png'>
-            <p style="z-index:15; text-align: center; font-size:16px;color: #FFF7EA; position:absolute;top:40vh;left:41%;"> le <br>{{ $store.state.atelier[$route.params.index].date }} </p>          
-            <p style="position:absolute; top:55vh;left:10%;font-size: 16.275px; color: #016590;"> Restaurant <strong>{{ $store.state.atelier[$route.params.index].restaurant }} </strong> </p> 
-            <p style="position:absolute; top:58vh;left:10%; font-size: 16.275px; color: #016590;">   {{ $store.state.atelier[$route.params.index].chef }}   </p> 
-            <p style="position:absolute; top:62vh;left:10%;font-size: 16.275px; color: #016590;">  <Strong> € </Strong> {{ $store.state.atelier[$route.params.index].tarif }} | <img  style="height:15px;width:15px;" src='../assets/icons/contour-circulaire-de-lhorloge.png'>  {{ $store.state.atelier[$route.params.index].duree }} |  <img  style="height:15px;width:15px;" src='../assets/icons/silhouette-dutilisateurs-multiples.png'>  {{ $store.state.atelier[$route.params.index].nombrePersonne }}   </p> 
+            <p style="z-index:15; text-align: center; font-size:16px;color: #FFF7EA; position:absolute;top:40vh;left:41%;"> le <br>{{ $store.state.atelierRestaurateur[$route.params.index].date }} </p>          
+            <p style="position:absolute; top:55vh;left:10%;font-size: 16.275px; color: #016590;"> Restaurant <strong>{{ $store.state.atelierRestaurateur[$route.params.index].restaurant }} </strong> </p> 
+            <p style="position:absolute; top:58vh;left:10%; font-size: 16.275px; color: #016590;">   {{ $store.state.atelierRestaurateur[$route.params.index].chef }}   </p> 
+            <p style="position:absolute; top:62vh;left:10%;font-size: 16.275px; color: #016590;">  <Strong> € </Strong> {{ $store.state.atelierRestaurateur[$route.params.index].tarif }} | <img  style="height:15px;width:15px;" src='../assets/icons/contour-circulaire-de-lhorloge.png'>  {{ $store.state.atelier[$route.params.index].duree }} |  <img  style="height:15px;width:15px;" src='../assets/icons/silhouette-dutilisateurs-multiples.png'>  {{ $store.state.atelier[$route.params.index].nombrePersonne }}   </p> 
         </div> 
 
            <!-- enregistrement -->
 
 
         <p style="position:absolute; bottom:26vh;right:10%; color: #F7A600; ">  Description de l'atelier  </p>
-        <p style="position:absolute; bottom:15vh;right:10%;font-size:2vh;text-align:left;margin-left:5%;width:80%;"> Repas complet avec une réalisation de la pâte à crêpes avec une recette 100% bretonne et une recette de galette légère.  </p>  
+        <p style="position:absolute; bottom:15vh;right:10%;font-size:2vh;text-align:left;margin-left:5%;width:80%;overflow:auto;" >  {{ $store.state.atelierRestaurateur[$route.params.index].descriptif }} </p>  
 
-        <router-link    :to="{ name: 'enregistrement', params: { numeroatelier: $route.params.index, numeroUsers: $route.params.numeroUsers }}" > 
-             <button class="btn1" style="width:auto;position:absolute;bottom:10vh;padding:4px;left:25%;font-size:2.5vh;" >   S'inscrire à l'atelier </button> 
+       
+        <button class="btn1" style="width:auto;position:absolute;bottom:10vh;padding:4px;left:25%;font-size:2.5vh;" v-on:click.once="retour('restaurateur')">   Retour Acceuil </button> 
 
-        </router-link > 
+     
  
        
 

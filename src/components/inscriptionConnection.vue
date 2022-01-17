@@ -17,7 +17,7 @@ export default {
    <div class="row contenaire inscriptionConnection">
 
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 logo" >
-            <img style="width96px; height:148px;" class="logo" src="../assets/MijotoLogo__logo-blue.png">
+            <img style=" height:148px;" class="logo" src="../assets/MijotoLogo__logo-blue.png">
         </div>
 
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">

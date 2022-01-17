@@ -18,20 +18,57 @@ export default {
 
      
 
-    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadreInscription"> 
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" id="cadreAcceuilRestaurateur"> 
 
             <div class="row contenaire" id="fondAcceuilClient" > 
                 <img style="width:60%;height:30vh;position:absolute;top:5vh;left:20%;" src="../assets/accueilClient/Ellipse32.png">   
-                <h2 style=" z-index:10;position:absolute;top:10vh;left:27%;font-size:31px;width:50%; "> Mon <br> espace </h2>  
+                <h2 style=" z-index:10;position:absolute;top:10vh;left:25%;font-size:31px;width:50%; "> Mon <br> espace </h2>  
 
             </div>
 
 
+
+        <div class="row" v-if="$store.state.atelierRestaurateur.length > 0"  > 
+
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-bottom:10vh;" >
+                <p style=" text-align:left;width:80%;
+               z-index:10;font-size: 18px; line-height: 22px;margin-left:6%; color: #F7A600; "> Mes atelier à venir</p>  
+              
+              
+                <div class="listeAtelier"  >
+                    <li v-for="atelier, index in $store.state.atelierRestaurateur" >
+                            
+                        <article >
+                            <router-link :to="{ name: 'atelierRestaurant', params: { index: index }}"> 
+                                <img style="width:150px;height:16vh;padding-right:10%;"  src="../assets/goutsCulinaires/pexels-los-muertos-crew-7613555.jpg">    
+                            </router-link>
+                            <p> {{ atelier.nom }} </p>
+                            <p style="color: #F7A600;"> a 2.5 km de chez vous</p>
+                        </article> 
+                    </li>    
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="justify-content:center;text-align:center;position:absolute;top:75vh;width:90%;">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> 
+                <router-link to="/atelierCreation"> 
+                    <img  style="height:8vh;width:20%; " src='../assets/icons/plus.png'> 
+                    <p style="font-size: 14px; color: #016590;"> Ajoutez votre premier atelier </p>
+                </router-link> 
+            </div>
+        </div>
+
+
+           
+
+
+        <!-- 
         <div class="row" > 
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                 <p style=" text-align:left;width:80%;
-               z-index:10;font-size: 14px; line-height: 22px; color: #F7A600;  "> mes ateliers à venir</p>  
+               z-index:10;font-size: 18px; line-height: 22px;margin-left:6%; color: #F7A600;  "> Mes ateliers à venir</p>  
            
               
                 <div class="listeAtelier" >
@@ -81,7 +118,7 @@ export default {
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-bottom:10vh;" >
                 <p style=" text-align:left;width:80%;
-               z-index:10;font-size: 14px; line-height: 22px; color: #F7A600; "> Ateliers passés </p>  
+               z-index:10;font-size: 18px; line-height: 22px;margin-left:6%; color: #F7A600; "> Ateliers passés </p>  
               
               
                 <div class="listeAtelier" >
@@ -123,33 +160,24 @@ export default {
               
             
             </div>
-        </div>
-
-
-        <div id="menu">
+   
+            -->
+     
+        <div id="menuPro">
 
             <ul>     
-                <li>
-                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/contour-circulaire-de-lhorloge.png'> <br> 
-                    <a style="color: #016590;font-size:1.4vh;"> Accueil</a>
+                  <li>
+                    <img  style="width:85%;" src='../assets/icons/home.png'> <br> 
+                    <a > Accueil</a>
                 </li>
 
                    
-                <li>
-                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/1.png'> <br> 
-                    <a style="color: #016590;font-size:1.4vh;"> Recherche </a>
-                </li>
+         
 
                    
-                <li>
-                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/2.png'> <br> 
-                    <a style="color: #016590;font-size:1.4vh;"> Evenement </a>
-                </li>
-
-                   
-                <li>
-                    <img  style="margin-top:1vh;margin-left:10%;height:4vh;width:70%;" src='../assets/icons/zz.png'> <br> 
-                    <a style="color: #016590;font-size:1.4vh;"> Mon compte </a>
+                  <li>
+                    <img   src='../assets/icons/zz.png'> <br> 
+                    <a > Mon compte </a>
                 </li>
             </ul>
 
@@ -174,22 +202,33 @@ export default {
 <style>
 
 
-#menu{
+#menuPro img{
+    margin-top:1vh;margin-left:10%;height:4vh;width:60%;
+}
+#menuPro{
     position:fixed;bottom:0;left:0;width:100%;height:8vh;background-color:white;
-      list-style-type:none;  
+      list-style-type:none;  text-align:center; 
 }
 
 
-#menu ul {
+#menuPro ul {
     padding:0;
     margin:0;
-    list-style-type:none;      
+    list-style-type:none;   
+    padding-left:25%;   
 }
 
-#menu li {
+#menuPro li {
     margin-left:10%;;
     float:left; 
 }
+
+
+#menuPro li a{
+    color: #016590;font-size:1.4vh;
+}
+
+
 
 #fondAcceuilClient{
     background-image:url("../assets/accueilClient/img.png");
@@ -203,7 +242,7 @@ export default {
     z-index:2;
    
 }
-.cadreInscription{
+#cadreAcceuilRestaurateur{
     padding-top:45vh;
     text-align:left;
     padding-left:5%;
@@ -211,9 +250,7 @@ export default {
            scrollbar-width: none;
        
 
-    position:absolute;
-    bottom:0;
-    left:0;
+   
     height:100vh;
     background: #FFF7EA;
     width:100%;
@@ -230,26 +267,20 @@ article p{
     text-align:left;
 }
 article img{
-    width:150px;height:15vh;
+    width:150px;height:17vh;
 
 }
 
 
 .listeAtelier{
-    padding-top:2vh;
     width:auto;
-    height:auto;
-    
+    height:auto; 
     
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    margin-top: 20px;
-
+    padding-top: 1vh;
     scrollbar-width: none;
-
-    
-
 }
 
 

@@ -4,20 +4,26 @@
 export default {
     methods: {
         connectionUsers( listuser ){
+            var comp =0;
             
             listuser.forEach((item, index) => {
                 if(item.mail == this.email &&  item.mdp == this.mdp){
                     // si numero a 0 alors utilisateur
                     if(item.numero==0) {
-                     
+                        comp = 1
                         this.$router.push('/acceuilClients/'+index) 
                     }else{ // sinon restaurateur
+                        comp = 1
                         this.$router.push('/acceuilRestaurateurs') 
                     }
                     
                 }
             
             })
+            if( comp == 0) { 
+                alert("Email ou mot de passe incorrecte")
+            }
+            
  
         }
     },
@@ -38,7 +44,7 @@ export default {
 
     <div class="row contenaire connection">
         
-        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadre" > 
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 cadre"  style="margin-top:19.5vh; height:80vh;"> 
 
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                 <h2 style="font-weight:bold"> Heureux de vous revoir !</h2>
@@ -48,10 +54,10 @@ export default {
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                 <form >
                     <div>
-                        <input class="modifInput"  type="email" name="email" @click="email=''" v-model="email">
+                        <input placeholder="E-mail" class="modifInput"  type="email" name="email" @click="email=''" v-model="email">
                     </div>
                     <div>
-                        <input class="modifInput"  type="text"  name="mdp"  @click="mdp=''" v-model="mdp" >
+                        <input placeholder="Mot de passe" class="modifInput"  type="text"  name="mdp"  @click="mdp=''" v-model="mdp" >
                     </div>
                     <div style="text-align:left;"> 
                         <input  style="margin-left:64px;" type="checkbox" name="scales">
@@ -92,9 +98,6 @@ export default {
     background-size: cover;
 }
 
-.cadre{
-   margin-top:19.5vh; height:80vh;
-}
 
 
 

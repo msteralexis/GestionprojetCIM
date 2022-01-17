@@ -49,6 +49,11 @@ const router = createRouter({
       component: () => import('../components/inscriptionClient.vue')
     },
     {
+      path: '/enregistrement/:numeroatelier/:numeroUsers',
+      name: 'enregistrement',
+      component: () => import('../components/enregistrement.vue')
+    },
+    {
       path: '/acceuilClients/:index',
       name: 'acceuilClients',
       component: () => import('../components/acceuilClients.vue')
@@ -62,7 +67,18 @@ const router = createRouter({
       path: '/atelier/:index/:numeroUsers',
       name: 'atelier',
       component: () => import('../components/atelier.vue')
+    },
+    {
+      path: '/atelierCreation',
+      name: 'atelierCreation',
+      component: () => import('../components/atelierCreation.vue')
+    },
+    {
+      path: '/atelierRestaurant/:index',
+      name: 'atelierRestaurant',
+      component: () => import('../components/atelierRestaurant.vue')
     }
+    
     
 
   ]

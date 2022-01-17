@@ -7,7 +7,6 @@ import axios from "axios"; // pour requete http
 import store from './store'
 
 
-
 const app = createApp(App).use(store)
 
 app.use(router)
