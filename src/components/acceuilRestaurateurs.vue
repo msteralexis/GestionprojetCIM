@@ -54,7 +54,9 @@ export default {
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> 
                 <router-link to="/atelierCreation"> 
                     <img  style="height:8vh;width:20%; " src='../assets/icons/plus.png'> 
-                    <p style="font-size: 14px; color: #016590;"> Ajoutez votre premier atelier </p>
+                    <p v-if="$store.state.atelierRestaurateur.length > 0" style="font-size: 14px; color: #016590;"> Ajoutez un nouvel atelier </p>
+                    <p v-if="$store.state.atelierRestaurateur.length == 0" style="font-size: 14px; color: #016590;"> Ajoutez votre premier atelier </p>
+
                 </router-link> 
             </div>
         </div>
