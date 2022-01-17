@@ -40,12 +40,9 @@ export default {
         </div> 
 
 
-        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
-            <img  class="t" v-if="$route.params.index==0"  src='../assets/goutsCulinaires/pexels-los-muertos-crew-7613555.jpg'>
-            <img  class="t"  v-if="$route.params.index==1"  src='../assets/goutsCulinaires/sushi.jpg'>
-            <img  class="t"  v-if="$route.params.index==2"  src='../assets/goutsCulinaires/pasta.jpg'>
-            <img  class="t"  v-if="$route.params.index==3"  src='../assets/goutsCulinaires/pexels-tioroshi-lazaro-2874989.jpg'>
-        </div> 
+       
+        <img  class="t"   src='../assets/goutsCulinaires/pexels-los-muertos-crew-7613555.jpg'>
+        
 
 
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
@@ -64,7 +61,7 @@ export default {
 
 
         <p style="position:absolute; bottom:26vh;right:10%; color: #F7A600; ">  Description de l'atelier  </p>
-        <p style="position:absolute; bottom:15vh;right:10%;font-size:2vh;text-align:left;margin-left:5%;width:80%;overflow:auto;" >  {{ $store.state.atelierRestaurateur[$route.params.index].descriptif }} </p>  
+        <p style="position:absolute; bottom:15vh;right:10%;font-size:2vh;text-align:left;margin-left:5%;width:70%;overflow:auto;" >  {{ $store.state.atelierRestaurateur[$route.params.index].descriptif }} </p>  
 
        
         <button class="btn1" style="width:auto;position:absolute;bottom:10vh;padding:4px;left:25%;font-size:2.5vh;" v-on:click.once="retour('restaurateur')">   Retour Acceuil </button> 
