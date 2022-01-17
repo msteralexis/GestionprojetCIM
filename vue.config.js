@@ -1,4 +1,4 @@
-const publicPath = '/'
+const publicPath = '/dist/'
 
 module.exports = {
     publicPath: publicPath,
