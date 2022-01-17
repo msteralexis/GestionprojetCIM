@@ -44,7 +44,7 @@ export default {
 
 
 .inscriptionConnection{
-    background-image:url("../assets/inscriptionConnection/img-background.jpg");
+   background-image:url("../assets/inscriptionConnection/img-background.jpg");
     background-repeat:no-repeat;
     background-size: cover;
 }
