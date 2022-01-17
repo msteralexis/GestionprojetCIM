@@ -12,7 +12,6 @@ const app = createApp(App).use(store)
 app.use(router)
 
 
-
 app.mount('#app')
 
 
