@@ -1,4 +1,4 @@
-const publicPath = '/dist/'
+const publicPath = '/GestionprojetCIM//dist/'
 
 module.exports = {
     publicPath: publicPath,
